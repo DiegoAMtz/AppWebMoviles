@@ -1,0 +1,54 @@
+@import "compass/css3";
+
+child.view.arrow{
+    @include slice('arrow.png');
+}
+
+$theme.sc-view{
+    &.normal-image-overlay{
+        background-color: black;
+        opacity: 0.25;
+    }
+    &.control-view{
+        border-color: black;
+        border-style: solid;
+        opacity: 0.7;
+    }
+}
+$theme.sc-image-view{
+    &.unscaled-image{
+        border-color: black;
+        border-style: solid;
+        opacity: 0.7;
+    }   
+    &.shadow-image{
+        border-color: black;
+        border-style: dashed;
+        opacity: 0.7;
+    }
+    &.scaled-image{
+        background-color: rgba(130,130,130,0.6);
+        border-color: black;
+        border-style: solid;
+    }
+}
+$theme.sc-label-view{
+    &.control-title{
+        line-height: 25px;
+        font-size: 13px;
+    }
+    &.title{
+        @include border-right-radius(15px);
+        background-color: rgba(255,255,255,0.3);
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+    }
+    &.dest{
+        @include border-left-radius(15px);
+    }
+    .dimensions{
+        font-family: Monaco,'Courier New',monospace;
+        font-size: 13px;
+    }
+}
