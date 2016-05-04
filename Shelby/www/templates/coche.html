@@ -1,0 +1,33 @@
+<!--Se crea la vista -->
+<ion-view view-title="Informacion Tecnica">
+   <!--Se crea un boton de navegacion en la parte derecha de la barra de titulo -->
+    <ion-nav-buttons side="secondary">
+       <!--Se creo el boton que cambia el valor de una variable -->
+        <button class="button button-icon ion-navicon" ng-click="data.showReorder = !data.showReorder"></button>
+    </ion-nav-buttons>
+    <!--Se crea el contenido de la aplicacion -->
+    <ion-content class="padding">
+       <!--Se crea una lista que se muestra un icono dependiendo de una variable -->
+        <ion-list class="list" show-reorder="data.showReorder">
+           <!--Se crean elementos dependiendo los datos que contengan el JSON en la variable detalles -->
+           <!--Y que inicia una funcion que deja que se reordenen los elementos -->
+           <!--Y el cual tambien le aplica un estilo css solo si cumple con una variable -->
+            <ion-item class="item-thumbnail-left item-text-wrap" ng-repeat="item in detalles" ng-click="toggleDescripcion(item)" ng-class="{noresumido : item.resumido}">
+                <img src="img/recortes/{{item.foto}}">
+                <!--Se pone el titulo que esta guardado en el JSON -->
+                <h3>{{item.titulo}}</h3>
+                <!--Muestra el parrafo con el tecto con un limite de 85 caracteres-->
+                <!--y checa que si el texto es mayor de 85 caracteres agregue tres puntos al final para indicar que continua el texto -->
+                <p ng-show="!item.resumido">
+                    {{item.descripcion | limitTo:85}} {{item.descripcion.length > 85 ? '&hellip;' : ''}}
+                </p>
+                <!--Muestra el texto sin limite de caracteres -->
+                <p ng-show="item.resumido">
+                    {{item.descripcion}}
+                </p>
+                <!--Agrega un boton que permite reordenar la lista llamando a la funcion moveItem -->
+                <ion-reorder-button class="ion-navicon" on-reorder="moveItem(item, $fromIndex, $toIndex)"></ion-reorder-button>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

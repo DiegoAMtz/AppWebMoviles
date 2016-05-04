@@ -1,0 +1,25 @@
+<ion-view view-title="Comunidad">
+   <!--Crea una sub-barra que contendra un input para busqueda -->
+    <div class="bar bar-subheader item-input-inset">
+        <label class="item-input-wrapper">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input type="search" placeholder ng-model="query">
+        </label>
+    </div>
+<!--Se crea el contenido de la aplicacion especificando que la pagina contiene una sub-barra -->
+    <ion-content class="has-subheader">
+       <!--Crea una lista -->
+        <ion-list>
+           <!--Crea un nuevo item que se repetira segun la variable usuarios -->
+           <!--El cual contiene un filtro que se saca de la variable que se crea del cuadro de busqueda -->
+            <ion-item class="item-avatar item-icon-right" ng-repeat="item in usuarios | filter:query" href="#/tab/user/{{item.id}}">
+                <img src="img/users/{{item.foto}}">
+                <!--Muestra el nombre y apellidos de los usuarios -->
+                <h2>{{item.nombre}} {{item.apellidos}}</h2>
+                <p>{{item.telefono}}</p>
+                <!--Agrega un icono que ejecuta la aplicacion de telefono con el numero del usuario -->
+                <a class="button button-icon icon ion-ios-telephone" href="tel:{{item.telefono}}"></a>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
