@@ -1,0 +1,83 @@
+<ion-view hide-nav-bar="true">
+    <ion-header-bar class="bar-assertive">
+        <h1 class="title">Examen de proposiciones lógicas</h1>
+    </ion-header-bar>
+    <ion-content>
+            <ion-list>
+                <ion-item class="item-divider calm">
+                    <h2 class="calm">¿Qué es una proposición lógica?</h2>
+                </ion-item>
+                <ion-item ng-repeat="item in preg1">
+                        <ion-radio class="item-text-wrap" ng-model="res1.value" value="{{item.value}}" name="1">{{item.res}}</ion-radio>
+                </ion-item>
+            </ion-list>
+            <ion-list>
+                <ion-item class="item-divider calm item-text-wrap">
+                    <h2 class="calm">¿La conjunción lógica solo es verdadera cuando las proposiciones son falsas?</h2>
+                </ion-item>
+                <ion-item ng-repeat="item in preg2">
+                        <ion-radio ng-model="res2.value" value="{{item.value}}" name="2">{{item.res}}</ion-radio>
+                </ion-item>
+            </ion-list>
+            <ion-list>
+                <ion-item class="item-divider calm item-text-wrap">
+                    <h2 class="calm">¿La disyunción lógica solo es verdadera cuando las proposiciones son verdaderas?</h2>
+                </ion-item>
+                <ion-item ng-repeat="item in preg3">
+                        <ion-radio class="item-text-wrap" ng-model="res3.value" value="{{item.value}}" name="3">{{item.res}}</ion-radio>
+                </ion-item>
+            </ion-list> 
+            <ion-list>
+                <ion-item class="item-divider calm item-text-wrap">
+                    <h2 class="calm">¿Qué es la negación lógica?</h2>
+                </ion-item>
+                <ion-item ng-repeat="item in preg4">
+                        <ion-radio class="item-text-wrap" ng-model="res4.value" value="{{item.value}}" name="4">{{item.res}}</ion-radio>
+                </ion-item>
+            </ion-list>
+            <ion-list>
+                <ion-item class="item-divider calm item-text-wrap">
+                    <h2 class="calm">¿En la computación donde se utiliza la lógica?</h2>
+                </ion-item>
+                <ion-item ng-repeat="item in preg5">
+                        <ion-radio class="item-text-wrap" ng-model="res5.value" value="{{item.value}}" name="5">{{item.res}}</ion-radio>
+                </ion-item>
+            </ion-list>    
+            <button class="button button-energized button-block" ng-click="checar()">Enviar</button>
+            <a class="button button-dark button-block" href="#/temas">Cancelar</a>
+            <script id="calificacion.html" type="text/ng-template">
+              <ion-modal-view>
+                <ion-header-bar class="bar-assertive">
+                  <h1 class="title">Vista de calificación</h1>
+                </ion-header-bar>
+                <ion-content>
+                  <h1 style="text-align:center;">Calificacion: {{calificacion}}</h1>
+                  <ion-list ng-hide="todasCorrectas">
+                      <ion-item class="item-divider">
+                          Tuviste error en las siguientes preguntas:
+                      </ion-item>
+                      <ion-item ng-hide="p1">
+                          <p>¿Qué es una proposición lógica?</p>
+                      </ion-item>
+                      <ion-item ng-hide="p2">
+                          <p>¿La conjunción lógica solo es verdadera cuando las proposiciones son falsas?</p>
+                      </ion-item>
+                      <ion-item ng-hide="p3">
+                          <p>¿La disyunción lógica solo es verdadera cuando las proposiciones son verdaderas?</p>
+                      </ion-item>
+                      <ion-item ng-hide="p4">
+                          <p>¿Qué es la negación lógica?</p>
+                      </ion-item>
+                      <ion-item ng-hide="p5">
+                          <p>¿En la computación donde se utiliza la lógica?</p>
+                      </ion-item>
+                  </ion-list>
+                  <div ng-show="todasCorrectas">
+                      <h2 style="color:#444444;text-align:center;">Felicidades!</h2>
+                  </div>
+                  <button class="button button-full button-calm" ng-click="closeModal()">Aceptar</button>
+                </ion-content>
+              </ion-modal-view>
+            </script>
+    </ion-content>
+</ion-view>

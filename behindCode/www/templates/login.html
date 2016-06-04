@@ -1,0 +1,24 @@
+<ion-view view-title="Iniciar Sesion" id="Login">
+    <ion-content scroll="true">
+        <form name="loginForm" ng-submit="signIn(loginForm.$valid)">
+            <ion-list>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Usuario</span>
+                    <input type="text" placeholder="Usuario" ng-model="user" name="user" id="user" required>
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Contraseña</span>
+                    <input type="password" placeholder="Contraseña" ng-model="pass" name="pass" id="pass" required>
+                </label>
+                <input type="submit" class="button button-calm button-block">
+            </ion-list>
+            <div ng-show="error">
+                <p>Llene correctamente los campos</p>
+            </div>
+            <br>
+            <div style="text-align:center;">
+                <a href="#/forgot">Olvidaste tu contraseña?</a>
+            </div>
+        </form>
+    </ion-content>
+</ion-view>

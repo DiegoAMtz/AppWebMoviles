@@ -1,0 +1,45 @@
+<ion-view>
+    <ion-nav-title>{{dato.titulo}}</ion-nav-title>
+    <ion-content>
+        <div class="list card">
+            <div class="item">
+                <h2 class="calm">{{dato.titulo}}</h2>
+            </div>
+            <div class="item item-body">
+                <img class="full-image" ng-src="{{dato.imagen}}">
+                <p>
+                    {{dato.descripcion}}
+                </p>
+            </div>
+            <ion-list ng-show="dato.tabla">
+                <ion-item class="item-divider">
+                    <h3 class="calm">Tabla de verdad</h3>
+                </ion-item>
+                <ion-item>
+                    <img ng-src="{{dato.tabla}}" class="full-image ">
+                </ion-item>
+            </ion-list>
+            <ion-list ng-show="dato.ejemplo[0].dato[0].titulo" ng-repeat="items in dato.ejemplo">
+               <ion-item class="item-divider item-text-wrap">
+                   <h2 class="aprender">{{items.titulo}}</h2>
+               </ion-item>
+                <ion-list ng-repeat="item in items.dato track by $index">
+                    <ion-item class="item-divider item-text-wrap" ng-show="item.titulo">
+                        <h3 class="calm">{{item.titulo}}</h3>
+                    </ion-item>
+                    <ion-item class="item-text-wrap">
+                        <p>{{item.dato}}</p>
+                    </ion-item>
+                </ion-list>
+            </ion-list>
+            <ion-list ng-repeat="item in dato.ejemplo" ng-hide="dato.ejemplo[0].dato[0].titulo">
+                <ion-item class="item-divider item-text-wrap" ng-show="item.titulo">
+                    <h3 class="assertive">{{item.titulo}}</h3>
+                </ion-item>
+                <ion-item class="item-text-wrap">
+                    <p>{{item.dato}}</p>
+                </ion-item>
+            </ion-list>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,20 @@
+<ion-view view-title="Temas" hide-nav-bar="true">
+    <ion-header-bar class="bar-energized">
+        <h1 class="title">behindCode</h1>
+       <button class="button button-clear" ui-sref="home">Cerrar Sesión</button>
+    </ion-header-bar>
+    <ion-content>
+        <ion-list ng-repeat="item in temas">
+            <ion-item class="item-divider">
+                <h2 class="calm">{{item.titulo}}</h2>
+            </ion-item>
+            <ion-item class="item-thumbnail-left item-text-wrap">
+                <img ng-src="{{item.imagen}}" class="full-image">
+                <p>{{item.descripcion}}</p>
+            </ion-item>
+            <a class="item item-icon-right calm" href="#/temas/subtemas/{{item.id}}">
+                <i class="icon ion-chevron-right"></i>Iniciar
+            </a>
+        </ion-list>
+    </ion-content>
+</ion-view>
