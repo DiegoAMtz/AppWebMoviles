@@ -1,0 +1,208 @@
+{
+    "temas":[
+        {
+            "id":0,
+            "titulo":"Proposiciones Lógicas",
+            "imagen":"img/1.jpg",
+            "descripcion":"La lógica proposicional pretende estudiar las frases declarativas simples (enunciados o proposiciones).",
+            "subtemas":[
+                {
+                    "id":0,
+                    "titulo":"Proposición lógica",
+                    "imagen":"img/1.jpg",
+                    "descripcion":"Una proposición se define como un enunciado que puede ser calificado como verdadero o falso y que no puede descomponerse en otras frases verdaderas o falsas.",
+                    "ejemplo":[
+                        {
+                            "titulo":"Ejemplo de proposición",
+                            "dato":"Creo que todos los hombres son mortales"
+                        },
+                        {
+                            "dato":"Creo que Sócrates es hombre"
+                        },
+                        {
+                            "dato":"Por lo tanto, creo que Sócrates es mortal"
+                        }
+                    ]
+                },
+                {
+                    "id":1,
+                    "titulo":"Conjunción (Operador And)",
+                    "descripcion":"La conjunción es un operador que opera sobre dos valores de verdad, típicamente los valores de verdad de dos proposiciones, devolviendo el valor de verdad verdadero cuando ambas proposiciones son verdaderas, y falso en cualquier otro caso. Es decir es verdadera cuando ambas son verdaderas.",
+                    "imagen":"img/1/conjuncion.jpg",
+                    "tabla":"img/1/tabla-conjuncion.jpg",
+                    "ejemplo":[
+                        {
+                            "titulo":"Ejemplo de conjunción",
+                            "dato":"Todos los hombres son mortales y todas las mujeres son mortales."
+                        },
+                        {
+                            "dato":"Todos los hombres son mortales ^ todas las mujeres son mortales."
+                        }
+                    ]
+                },
+                {
+                    "id":2,
+                    "titulo":"Disyunción (Operador Or)",
+                    "descripcion":"La disyunción es un operador que opera sobre dos valores de verdad, típicamente los valores de verdad de dos proposiciones, devolviendo el valor de verdad verdadero cuando una de las proposiciones es verdadera, o cuando ambas lo son, y falso cuando ambas son falsas.",
+                    "imagen":"img/1/disyuncion.png",
+                    "tabla":"img/1/tabla-disyuncion.jpg",
+                    "ejemplo":[
+                        {
+                            "titulo":"Ejemplo de disyunción",
+                            "dato":"Daniel es hombre o Daniel es mujer."
+                        },
+                        {
+                            "dato":"Daniel es hombre v Daniel es mujer."
+                        }
+                    ]
+                },
+                {
+                    "id":3,
+                    "titulo":"Negación (Operador Not)",
+                    "descripcion":"La negación es un operador que se ejecuta. Sobre un único valor de verdad, devolviendo el valor contradictorio de la proposición considerada.",
+                    "imagen":"img/1/negacion.jpg",
+                    "tabla":"img/1/tabla-negacion.jpg",
+                    "ejemplo":[
+                        {
+                            "titulo":"Ejemplo de negación",
+                            "dato":"Los humanos no son inmortales."
+                        },
+                        {
+                            "dato":"Los humanos ¬ son inmortales."
+                        }
+                    ]
+                },
+                {
+                    "id":4,
+                    "titulo":"Condicional",
+                    "descripcion":"El condicional material es un operador que opera sobre dos valores de verdad, típicamente los valores de verdad de dos proposiciones, devolviendo el valor de verdad falso sólo cuando la primera proposición es verdadera y la segunda falsa, y verdadero en cualquier otro caso.",
+                    "imagen":"img/1/condicional.jpg",
+                    "tabla":"img/1/tabla-condicional.jpg",
+                    "ejemplo":[
+                        {
+                            "titulo":"Ejemplo de condicional",
+                            "dato":"Irving es un hombre por lo tanto es mortal."
+                        },
+                        {
+                            "dato":"Irving es un hombre → es mortal."
+                        }
+                    ]
+                },
+                {
+                    "id":5,
+                    "titulo":"Ejemplo de uso de proposiciones.",
+                    "imagen":"img/1/proposicion.jpg",
+                    "ejemplo":[
+                        {
+                            "titulo":"Proposiciones",
+                            "dato":[
+                                {
+                                    "titulo":"Proposición 1",
+                                    "dato":"Si no hay orden judicial, entonces no se puede ingresar en el domicilio."
+                                },
+                                {
+                                    "titulo":"Proposición 2",
+                                    "dato":"Si no se puede ingresar en el domicilio, entonces no se realiza la investigación."
+                                },
+                                {
+                                    "titulo":"Proposición 3",
+                                    "dato":"Se realiza la investigación."
+                                },
+                                {
+                                    "titulo":"Conclusión",
+                                    "dato":"Sí hay una orden judicial."
+                                }
+                            ]
+                        },
+                        {
+                            "titulo":"De las proposiciones anteriores se saca lo siguiente",
+                            "dato":[
+                                {
+                                    "dato":"p = Hay una orden judicial."
+                                },
+                                {
+                                    "dato":"q = Se puede ingresar en el domicilio."
+                                },
+                                {
+                                    "dato":"r = Se realiza la investigación."
+                                }
+                            ]
+                        },
+                        {
+                            "titulo":"De estos datos anteriores se convierten las proposiciones",
+                            "dato":[
+                                {
+                                    "titulo":"Proposición 1",
+                                    "dato":"¬p → ¬q"
+                                },
+                                {
+                                    "titulo":"Proposición 2",
+                                    "dato":"¬q → ¬r"
+                                },
+                                {
+                                    "titulo":"Proposición 3",
+                                    "dato":"r"
+                                },
+                                {
+                                    "titulo":"Conclusión",
+                                    "dato":"p"
+                                }
+                            ]
+                        },
+                        {
+                            "titulo":"Por lo tanto los enunciados anteriores quedan de la siguiente manera",
+                            "dato":[
+                                {
+                                    "dato":"((¬p → ¬q) ^ (¬q → ¬r) ^ r)) → p"
+                                }
+                            ]
+                            
+                        }
+                    ]
+                },
+                {
+                    "id":6,
+                    "titulo":"Aplicaciones de la lógica en la computación.",
+                    "imagen":"img/1/aplicacion.jpg",
+                    "ejemplo":[
+                        {
+                            "titulo":"Lenguajes de programación",
+                            "dato":"Como se estructura la lógica de un programa."
+                        },
+                        {
+                            "titulo":"Bases de datos",
+                            "dato":"Lenguajes de consulta."
+                        },
+                        {
+                            "titulo":"Inteligencia artificial",
+                            "dato":"Técnicas para el razonamiento, deducción de conocimiento."
+                        },
+                        {
+                            "titulo":"Analisis y diseño de algoritmos",
+                            "dato":"Análisis de la complejidad de los problemas."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id":1,
+            "titulo":"Diagramas de flujo",
+            "imagen":"img/2/r1.PNG",
+            "descripcion":"Un diagrama de flujo es una forma de representar gráficamente la secuencia de un proceso. Se utiliza en cualquier ciencia como en la programación, la economía y los procesos industriales.",
+            "subtemas":[
+                {
+                    "id":0,
+                    "titulo":"Diagramas de flujo",
+                    "imagen":"img/2/inicio.PNG",
+                    "descripcion":"Un diagrama de flujo es una forma de representar gráficamente la secuencia de un proceso. Se utiliza en cualquier ciencia como en la programación, la economía y los procesos industriales. Estos diagramas utilizan una serie de símbolos con significados especiales y son la representación gráfica de los pasos de un proceso. En computación, son modelos tecnológicos utilizados para comprender los rudimentos de la programación secuencial. Los símbolos permiten crear la estructura gráfica que describe los pasos a seguir para obtener un resultado específico. Este diagrama facilita la escritura del programa en algún lenguaje de programación."
+                }
+            ]
+        },
+        {
+            "id":2,
+            "titulo":"Lenguajes de Programación",
+            "imagen":"img/home.jpg"
+        }
+    ]
+}

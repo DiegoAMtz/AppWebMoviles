@@ -1,0 +1,344 @@
+{
+  "temas": [
+    {
+      "id": 0,
+      "titulo": "Proposiciones Lógicas",
+      "imagen": "img/1.jpg",
+      "descripcion": "La lógica proposicional pretende estudiar las frases declarativas simples (enunciados o proposiciones).",
+      "subtemas": [
+        {
+          "id": 0,
+          "titulo": "Proposición lógica",
+          "imagen": "img/1.jpg",
+          "descripcion": "Una proposición se define como un enunciado que puede ser calificado como verdadero o falso y que no puede descomponerse en otras frases verdaderas o falsas.",
+          "ejemplo": [
+            {
+              "titulo": "Ejemplo de proposición",
+              "dato": "Creo que todos los hombres son mortales"
+            },
+            {
+              "dato": "Creo que Sócrates es hombre"
+            },
+            {
+              "dato": "Por lo tanto, creo que Sócrates es mortal"
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "titulo": "Conjunción (Operador And)",
+          "descripcion": "La conjunción es un operador que opera sobre dos valores de verdad, típicamente los valores de verdad de dos proposiciones, devolviendo el valor de verdad verdadero cuando ambas proposiciones son verdaderas, y falso en cualquier otro caso. Es decir es verdadera cuando ambas son verdaderas.",
+          "imagen": "img/1/conjuncion.jpg",
+          "tabla": "img/1/tabla-conjuncion.jpg",
+          "ejemplo": [
+            {
+              "titulo": "Ejemplo de conjunción",
+              "dato": "Todos los hombres son mortales y todas las mujeres son mortales."
+            },
+            {
+              "dato": "Todos los hombres son mortales ^ todas las mujeres son mortales."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "titulo": "Disyunción (Operador Or)",
+          "descripcion": "La disyunción es un operador que opera sobre dos valores de verdad, típicamente los valores de verdad de dos proposiciones, devolviendo el valor de verdad verdadero cuando una de las proposiciones es verdadera, o cuando ambas lo son, y falso cuando ambas son falsas.",
+          "imagen": "img/1/disyuncion.png",
+          "tabla": "img/1/tabla-disyuncion.jpg",
+          "ejemplo": [
+            {
+              "titulo": "Ejemplo de disyunción",
+              "dato": "Daniel es hombre o Daniel es mujer."
+            },
+            {
+              "dato": "Daniel es hombre v Daniel es mujer."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "titulo": "Negación (Operador Not)",
+          "descripcion": "La negación es un operador que se ejecuta. Sobre un único valor de verdad, devolviendo el valor contradictorio de la proposición considerada.",
+          "imagen": "img/1/negacion.jpg",
+          "tabla": "img/1/tabla-negacion.jpg",
+          "ejemplo": [
+            {
+              "titulo": "Ejemplo de negación",
+              "dato": "Los humanos no son inmortales."
+            },
+            {
+              "dato": "Los humanos ¬ son inmortales."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "titulo": "Condicional",
+          "descripcion": "El condicional material es un operador que opera sobre dos valores de verdad, típicamente los valores de verdad de dos proposiciones, devolviendo el valor de verdad falso sólo cuando la primera proposición es verdadera y la segunda falsa, y verdadero en cualquier otro caso.",
+          "imagen": "img/1/condicional.jpg",
+          "tabla": "img/1/tabla-condicional.jpg",
+          "ejemplo": [
+            {
+              "titulo": "Ejemplo de condicional",
+              "dato": "Irving es un hombre por lo tanto es mortal."
+            },
+            {
+              "dato": "Irving es un hombre → es mortal."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "titulo": "Ejemplo de uso de proposiciones.",
+          "imagen": "img/1/proposicion.jpg",
+          "ejemplo": [
+            {
+              "titulo": "Proposiciones",
+              "dato": [
+                {
+                  "titulo": "Proposición 1",
+                  "dato": "Si no hay orden judicial, entonces no se puede ingresar en el domicilio."
+                },
+                {
+                  "titulo": "Proposición 2",
+                  "dato": "Si no se puede ingresar en el domicilio, entonces no se realiza la investigación."
+                },
+                {
+                  "titulo": "Proposición 3",
+                  "dato": "Se realiza la investigación."
+                },
+                {
+                  "titulo": "Conclusión",
+                  "dato": "Sí hay una orden judicial."
+                }
+              ]
+            },
+            {
+              "titulo": "De las proposiciones anteriores se saca lo siguiente",
+              "dato": [
+                {
+                  "dato": "p = Hay una orden judicial."
+                },
+                {
+                  "dato": "q = Se puede ingresar en el domicilio."
+                },
+                {
+                  "dato": "r = Se realiza la investigación."
+                }
+              ]
+            },
+            {
+              "titulo": "De estos datos anteriores se convierten las proposiciones",
+              "dato": [
+                {
+                  "titulo": "Proposición 1",
+                  "dato": "¬p → ¬q"
+                },
+                {
+                  "titulo": "Proposición 2",
+                  "dato": "¬q → ¬r"
+                },
+                {
+                  "titulo": "Proposición 3",
+                  "dato": "r"
+                },
+                {
+                  "titulo": "Conclusión",
+                  "dato": "p"
+                }
+              ]
+            },
+            {
+              "titulo": "Por lo tanto los enunciados anteriores quedan de la siguiente manera",
+              "dato": [
+                {
+                  "dato": "((¬p → ¬q) ^ (¬q → ¬r) ^ r)) → p"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "titulo": "Aplicaciones de la lógica en la computación.",
+          "imagen": "img/1/aplicacion.jpg",
+          "ejemplo": [
+            {
+              "titulo": "Lenguajes de programación",
+              "dato": "Como se estructura la lógica de un programa."
+            },
+            {
+              "titulo": "Bases de datos",
+              "dato": "Lenguajes de consulta."
+            },
+            {
+              "titulo": "Inteligencia artificial",
+              "dato": "Técnicas para el razonamiento, deducción de conocimiento."
+            },
+            {
+              "titulo": "Analisis y diseño de algoritmos",
+              "dato": "Análisis de la complejidad de los problemas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "titulo": "Diagramas de flujo",
+      "imagen": "img/2/r1.PNG",
+      "descripcion": "Un diagrama de flujo es una forma de representar gráficamente la secuencia de un proceso. Se utiliza en cualquier ciencia como en la programación, la economía y los procesos industriales.",
+      "subtemas": [
+        {
+          "id": 0,
+          "titulo": "Diagramas de flujo",
+          "imagen": "img/2/inicio.PNG",
+          "descripcion": "Un diagrama de flujo es una forma de representar gráficamente la secuencia de un proceso. Se utiliza en cualquier ciencia como en la programación, la economía y los procesos industriales. Estos diagramas utilizan una serie de símbolos con significados especiales y son la representación gráfica de los pasos de un proceso. En computación, son modelos tecnológicos utilizados para comprender los rudimentos de la programación secuencial. Los símbolos permiten crear la estructura gráfica que describe los pasos a seguir para obtener un resultado específico. Este diagrama facilita la escritura del programa en algún lenguaje de programación."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Lenguajes de Programación",
+      "imagen": "img/3/r2.PNG",
+      "descripcion": "Un lenguaje de programación es un lenguaje formal diseñado para realizar procesos que pueden ser llevados a cabo por máquinas como las computadoras.",
+      "subtemas": [
+        {
+          "id": 0,
+          "titulo": "Lenguajes de Programación",
+          "imagen": "",
+          "descripcion": "Un lenguaje de programación es un lenguaje diseñado para describir el conjunto de acciones consecutivas que un equipo debe ejecutar. Por lo tanto, un lenguaje de programación es un modo práctico para que los seres humanos puedan dar instrucciones a un equipo. Pueden usarse para crear programas que controlen el comportamiento físico y lógico de una máquina, para expresar algoritmos con precisión, o como modo de comunicación humana. Está formado por un conjunto de símbolos y reglas sintácticas y semánticas que definen su estructura y el significado de sus elementos y expresiones. Al proceso por el cual se escribe, se prueba, se depura, se compila (de ser necesario) y se mantiene el código fuente de un programa informático se le llama programación."
+        },
+        {
+          "id": 1,
+          "titulo": "Tipos de Lenguajes de Programación",
+          "imagen": "",
+          "descripcion": "Los lenguajes de Programación se dividen en dos grupos: Lenguajes de Prgramación Híbrida y Lenguajes de Programación Interpretados"
+        },
+        {
+          "id": 2,
+          "titulo": "Lenguajes de Prgramación Híbrida",
+          "imagen": "",
+          "descripcion": "Un ejemplo de un lenguaje de programación hibrida es Java, ya que hace uso de una máquina virtual que se encarga de la traducción del código fuente por lo que hay veces es denominado compilado e interpretado. Otra ventaja de la máquina virtual que usar Java es que le permite ejecutar código Java en cualquier máquina que tenga instalada la JVM. La programación híbrida proporciona un mecanismo por medio del cual podemos aprovechar las ventajas del lenguaje ensamblador y los lenguajes de alto nivel, todo esto con el fin de escribir programas más rápidos y eficientes. Otro ejemplo de estos lenguajes es Turbo Pascal, aunque es un lenguaje que es anticuado por lo cual no se utiliza mucho.",
+          "ejemplo": [
+            {
+              "titulo": "Ejemplos",
+              "imagen": "img/1/java.png",
+              "descripcion": "Java"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "titulo": "Lenguajes de Programación Interpretados",
+          "imagen": "",
+          "descripcion": "Básicamente un lenguaje interpretado es aquel en el cual sus instrucciones o más bien el código fuente, escrito por el programador en un lenguaje de alto nivel, es traducido por el intérprete a un lenguaje entendible para la máquina paso a paso, instrucción por instrucción. El proceso se repite cada vez que se ejecuta el programa el código en cuestión. Los lenguajes interpretados permiten el tipado dinámico de datos, es decir, no es necesario inicializar una variable con determinado tipo de dato sino que esta puede cambiar su tipo en condición al dato que almacene entre otras características más.",
+          "ejemplo": [
+            {
+              "titulo": "Ejemplos",
+              "imagen": "img/1/python",
+              "descripcion": "Python"
+            },
+            {
+              "titulo": "Ejemplos",
+              "imagen": "img/1/ruby",
+              "descripcion": "Ruby"
+            },
+            {
+              "titulo": "Ejemplos",
+              "imagen": "img/1/php",
+              "descripcion": "PHP"
+            },
+            {
+              "titulo": "Ejemplos",
+              "imagen": "img/1/php",
+              "descripcion": "PHP"
+            },
+            {
+              "titulo": "Ventajas",
+              "descripcion": "La independencia de plataforma en los lenguajes interpretados"
+            },
+            {
+              "descripcion": "La reflexión y uso reflexivo del evaluador"
+            },
+            {
+              "descripcion": "Generación funcional de primer orden, y orden n sin necesidad de especificar metadata"
+            },
+            {
+              "descripcion": "Posibilidad de generación de código in-situ, sin necesidad de recurrir a una compilación"
+            },
+            {
+              "descripcion": "Contiene distintos tipos Dinámicos"
+            },
+            {
+              "descripcion": "Gestión de memoria automática"
+            },
+            {
+              "descripcion": "Facilidad en la depuración"
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "titulo": "Lenguajes Programación Compilados",
+          "imagen": "",
+          "descripcion": "Un lenguaje compilado es aquel cuyo código fuente, escrito en un lenguaje de alto nivel, es traducido por un compilador a un archivo ejecutable entendible para la máquina en determinada plataforma. Con ese archivo se puede ejecutar el programa cuantas veces sea necesario sin tener que repetir el proceso por lo que el tiempo de espera entre ejecución y ejecución es ínfimo.Son lenguajes de alto nivel que requieren que las instrucciones (código fuente del programa), sean traducidas, -mediante un programa compilador-, a un lenguaje que entienda la máquina (lenguaje máquina), con el fin de generar una versión ejecutable del programa.",
+          "ejemplo": [
+            {
+              "titulo": "Ejemplos",
+              "imagen": "img/1/visual",
+              "descripcion": "Visual C#"
+            },
+            {
+              "imagen": "img/1/objective",
+              "descripcion": "Objective C"
+            },
+            {
+              "imagen": "img/1/visualb",
+              "descripcion": "Visual Basic"
+            },
+            {
+              "titulo": "Ventajas",
+              "descripcion": "Es mucho más rápido que un lenguaje interpretado"
+            },
+            {
+              "descripcion": "Se pueden crear aplicaciones de escritorio robustas sin necesidad de un Framework"
+            },
+            {
+              "descripcion": "No es necesario tener una navegado actualizado, así como el uso de plugins"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "¿Que es JAVA?",
+      "imagen": "img/java.PNG",
+      "descripcion": "Java es un lenguaje de programación orientado a objetos que se popularizó a partir del lanzamiento de su primera versión comercial de amplia difusión, la JDK 1.0 en 1996. Actualmente es uno de los lenguajes más usados para la programación en todo el mundo.",
+      "subtemas": [
+        {
+          "id": 0,
+          "titulo": "Historia",
+          "imagen": "img/2/java2.PNG",
+          "descripcion": "Los antecedentes de Java habría que buscarlos en los lenguajes de programación C y C++. El lenguaje C fue desarrollado en la década de los 70 y constituye un lenguaje muy robusto usado como núcleo del sistema operativo Unix. C no admite la orientación a objetos y está considerado un lenguaje “poco amigable” desde el punto de vista de que su sintaxis, elementos de programación que emplea (manejo directo de memoria) y otras cuestiones hacen que sea un lenguaje difícil de aprender. C++ fue una evolución de C desarrollada en los años 80. Introdujo el diseño orientado a objetos, pero manteniendo la compatibilidad con C. Esto suponía que C++ permitiera tanto el uso de la programación estructurada “tradicional” como la programación orientada a objetos. Además C++ mantuvo ciertas características de C como el manejo directo de la memoria, el uso de variables globales, sentencia goto, etc. que hicieron que la evolución fuera “parcial”."
+        },
+        {
+          "id": 1,
+          "titulo": "Aplicaciones",
+          "imagen": "img/2/java3.PNG",
+          "descripcion": " 1. Aplicaciones “cliente”: son las que se ejecutan en un solo ordenador (por ejemplo el portátil de tu casa) sin necesidad de conectarse a otra máquina. Pueden servirte por ejemplo para realizar cálculos o gestionar datos."
+        },
+        {
+          "id": 2,
+          "descripcion": " 2. Aplicaciones “cliente/servidor”: son programas que necesitan conectarse a otra máquina (por ejemplo un servidor de datos) para pedirle algún servicio de forma más o menos continua, como podría ser el uso de una base de datos. Pueden servir por ejemplo para el teletrabajo: trabajar desde casa pero conectados a un ordenador de una empresa."
+        },
+        {
+          "id": 3,
+          "descripcion": "3. Podemos hablar también de “aplicaciones web”, que son programas Java que se ejecutan en un servidor de páginas web. Estas aplicaciones reciben “solicitudes” desde un ordenador y envían al navegador (Internet Explorer, Firefox, Safari, etc.) que actúa como su cliente páginas de respuesta en HTML."
+        }
+      ]
+    }
+  ]
+}
